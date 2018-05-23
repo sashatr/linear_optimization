@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta http-equiv="Cache-Control" content="private"> <!--VIP-->
+    <meta charset="utf-8">
+    <link href="{{url_for('static', filename = 'StyleSheet.css')}}"  rel="stylesheet" media="all"/>
+    <!--<link href="{{url_for('static', filename = 'stale.css')}}"  rel="stylesheet" media="all"/>-->
+    <title="List"/>
+  </head>
+  <body>
+    <div class='card--big'>
+
+
+<form method="get" name="info">
+  <div class='card--left'>
+    <p  style="text-align:center; font-size: 20px"> Enter values </p>
+       <p style= "right: 2px">Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class='little' type="text" name="age" value="{{pacient['age']}}">
+       <p>Temperature &nbsp;&nbsp; <input class='little' type="text" name="temperature" value="{{pacient['temperature']}}">
+       <p>Pulse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class='little' type="text" name="edit23" value="{{pacient['edit23']}}">
+       <p>T4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class='little' type="text" name="edit24" value="{{pacient['edit24']}}">
+       <p>T3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class='little' type="text" name="edit25" value="{{pacient['edit25']}}">
+
+    </div>
+  <div class='card--little'>
+     <p  style="text-align:center; font-size: 20px"> Enter criteria values </p>
+    <p>Y = <input class='little' type="text" name="sx10" value="{{data['sx10']}}"> X10 +
+    <input class='little' type="text" name="sx11"  value="{{data['sx11']}}">  X11  +
+    <input class='little' type="text" name="sconst_f"  value="{{data['sconst_f']}}"></p>
+
+    <p>A1 = <input class='little' type="text" name="A1"  value="{{data['A1']}}"> a11 +
+    <input class='little' type="text" name="A2"  value="{{data['A2']}}"> a12  +
+    <input class='little' type="text" name="A3"  value="{{data['A3']}}"> a13  +
+    <input class='little' type="text" name="A4"  value="{{data['A4']}}"> a14  +
+    <input class='little' type="text" name="A5"  value="{{data['A5']}}"> a15  +
+    <input class='little' type="text" name="A10"  value="{{data['A10']}}"> a110  +
+    <input class='little' type="text" name="A11"  value="{{data['A11']}}"> a111  +
+    <input class='little' type="text" name="A1const"  value="{{data['A1const']}}"></p>
+
+    <p>A2 = <input class='little' type="text" name="A21"  value="{{data['A21']}}"> a21 +
+    <input class='little' type="text" name="A22"  value="{{data['A22']}}"> a22  +
+    <input class='little' type="text" name="A23"  value="{{data['A23']}}"> a23  +
+    <input class='little' type="text" name="A24"  value="{{data['A24']}}"> a24  +
+    <input class='little' type="text" name="A25"  value="{{data['A25']}}"> a25  +
+    <input class='little' type="text" name="A210"  value="{{data['A210']}}"> a210  +
+    <input class='little' type="text" name="A211"  value="{{data['A211']}}"> a211  +
+    <input class='little' type="text" name="A2const"  value="{{data['A2const']}}"></p>
+
+    <p>A3 = <input class='little' type="text" name="A31"  value="{{data['A31']}}"> a31 +
+    <input class='little' type="text" name="A32"  value="{{data['A32']}}"> a32  +
+    <input class='little' type="text" name="A33"  value="{{data['A33']}}"> a33  +
+    <input class='little' type="text" name="A34"  value="{{data['A34']}}"> a34  +
+    <input class='little' type="text" name="A34"  value="{{data['A35']}}"> a35  +
+    <input class='little' type="text" name="A310"  value="{{data['A310']}}"> a310  +
+    <input class='little' type="text" name="A311"  value="{{data['A311']}}"> a311  +
+    <input class='little' type="text" name="A3const"  value="{{data['A3const']}}"></p>
+
+  </div>
+
+
+<div class='card--obm'>
+   <p  style="text-align:center; font-size: 20px"> Enter borders </p>
+        <p style="text-align:right; right: 3px" >  MIN &nbsp;&nbsp;&nbsp;&nbsp;MAX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+       <p>Temperature &nbsp; <input class='little' type="text" name="mn6"  value="{{data['mn6']}}">&nbsp;&nbsp;<input class='little' type="text" name="mx6"  value="{{data['mx6']}}">
+       <p>Pulse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input class='little' type="text" name="mn7"  value="{{data['mn7']}}"> &nbsp;<input class='little' type="text" name="mx7"  value="{{data['mx7']}}">
+       <p>T4 &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class='little' type="text" name="mn8"  value="{{data['mn8']}}"> &nbsp;<input class='little' type="text" name="mx8"  value="{{data['mx8']}}">
+       <p>T3 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class='little' type="text" name="mn9"  value="{{data['mn9']}}">&nbsp; <input class='little' type="text" name="mx9"  value="{{data['mx9']}}">
+       <p>dr1 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class='little' type="text" name="mn10"  value="{{data['mn10']}}"> &nbsp;<input class='little' type="text" name="mx10"  value="{{data['mx10']}}">
+       <p>dr2 &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class='little' type="text" name="mn11"  value="{{data['mn11']}}"> &nbsp;<input class='little' type="text" name="mx11"  value="{{data['mx11']}}">
+    </div>
+{%if lp%}
+  <div class='card--otv'>
+     <p  style="text-align:center; font-size: 20px"> Answer </p>
+         <p>dr1 &nbsp; <input class='little' type="text" name="infod"  value="{{lp['dr1']}}">
+       <p>dr2 &nbsp; <input class='little' type="text" name="infod"  value="{{lp['dr2']}}">
+       <p>T3 &nbsp; <input class='little' type="text" name="infod"  value="{{lp['answer']}}">
+
+    </div>
+    {%endif%}
+ <div class='input_1'>
+   <input type="submit" value="Entered Values", name="info">
+   <input type="submit" value="Default values", name="ok2">
+   </div>
+    </div>
+
+ </form>
+
+</div>
+  </body>
+</html>
