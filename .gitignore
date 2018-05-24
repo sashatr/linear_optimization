@@ -103,7 +103,6 @@ ENV/
 .idea/
 env/
 db.sqlite3
-requirements.txt
 migrations/
 error.log
 /__pycache__/
